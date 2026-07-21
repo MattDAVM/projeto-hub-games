@@ -11,8 +11,7 @@ namespace Bagel
         [SerializeField] CinemachineCamera m_MainMenuCamera;
         [SerializeField] CinemachineCamera m_MainMenuSecondaryCamera;
         [SerializeField] CinemachineCamera m_BagelSelectionCamera;
-        [SerializeField] CinemachineCamera m_PlayCamera;
-        [SerializeField] CinemachineCamera m_GameOverCamera;
+        [SerializeField] CinemachineCamera m_PlayCamera; 
 
         PlayManagerState m_State;
 
@@ -35,8 +34,7 @@ namespace Bagel
         }
 
         void UpdateFieldOfView(float newFOV)
-        {
-            m_MainMenuCamera.Lens.FieldOfView = newFOV;
+        { 
             m_MainMenuSecondaryCamera.Lens.FieldOfView = newFOV;
             m_PlayCamera.Lens.FieldOfView = newFOV;
         }
